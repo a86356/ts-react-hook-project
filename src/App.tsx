@@ -2,7 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Show from "./Show";
+
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Show/>
       </header>
     </div>
   );
