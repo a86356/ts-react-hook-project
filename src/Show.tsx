@@ -1,11 +1,8 @@
 import React, { useMemo, useState } from "react";
-let a = 1;
-
-let v = 1;
 function Show() {
   const [count, setCount] = useState(1);
   const [val, setVal] = useState(1);
-
+  let a = 1;
   const show = useMemo(() => {
     return [count, count + 1, count + 2];
   }, [count]);
