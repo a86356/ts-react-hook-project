@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useMemo, useState } from "react";
+let a = 1;
 
-function Show(){
-    return (
-        <div className="App">
-            I am show that asisiisis
+function Show() {
+  const [count, setCount] = useState(1);
+  const [val, setVal] = useState(1);
+
+  const show = useMemo(() => {
+    return [count, count + 1, count + 2];
+  }, [count]);
+
+  return (
+    <div className="App">
+      <button onClick={() => setCount(count + 1)}>+{count}--counter</button>
+      <button onClick={() => setVal(val + 1)}>+{val}--val</button>
     </div>
-);
+  );
 }
 
 export default Show;
