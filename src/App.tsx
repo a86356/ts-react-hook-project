@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./assets/common.css";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Book from "./Book";
 import Show from "./Show";
